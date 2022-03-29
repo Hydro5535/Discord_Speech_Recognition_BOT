@@ -34,12 +34,14 @@ Strona wygeneruje nam klucz kopiujemy go i wklejamy w pole odpowiednie pole. (Wa
 
 Ostatnim wymaganym kluczem jest klucz dla API Spotify a pozyskać możemy go na tej stronie (Wymaga posiadanie konta!): https://developer.spotify.com/dashboard/login
 Po zalogowaniu w prawym rogu widnieje guzik "Create An App" klikamy go, uzupełniamy pole nazwy oraz opisu (nie są one istotne), akceptujemy regulamin i klikamy guzik "Create". Na kolejnej stronie pojawią się niezbędne dane to jest Client ID, które kopiujemy i wklejamy w odpowiednie okno i Client Secret, który pojawi się po kliknięciu napisu "SHOW CLIENT SECRET" kopiujemy go i również wklejamy w odpowiednie pole.
+<img alt="Screen z strony API Spotify" src="https://i.imgur.com/LPOfufd.png"/>
 
 4. Kolejnym i już ostatnim plikiem, który wymaga naszej ingerencji jest config.json .
 Ten krok wymagać będzie aktywowania trybu dewelopera na discordzie dlatego zaczniemy od tego. Wchodzimy kolejno w Ustawienia użytkownika > Zaawansowane i kilkamy w sówak "Tryb dewelopera", aby go aktywować. Po wykonaniu tego kroku możemy przejść do uzupełniania naszego pliku.
 
 Pierwszą niezbędną informacją jest id naszego serwera. Klikamy prawym przyciskiem myszki na ikonę serwera a następnie guzik "Kopiuj ID" i wklejamy to między cudzysłowia (Ważne jest aby uważać, usunięcie cudzysłowia może uszkodzić działanie bota!).
 Kolejnym krokiem jest wybranie prefixu dla naszego bota podstawowo jest to $ jednak możemy zmienić go na jakikolwiek inny poza "/" oraz należy pamiętać, aby żaden inny bot na naszym serwerze takiego nie posiadał!
+Następne dwie informacje odpowiadają kolejno za powiadomienia o aktywności na kanałach głosowych i kanał tekstowy, na którym można rozmawiać z botem. Nie zdefiniowanie ich nie uszkodzi działania bota jednak uniemożliwi korzystanie z tych opcji. W obu miejscach wymagane są ID kanałów tekstowych. które uzyskać można poprzez kliknięcie na kanał tekstowy prawym klawiszem, naciśnięcie opcji "Kopiuj ID". Wklejamy skopiowane ID w odpowiednie miesjce między cudzysłowiami i gotowe.
 ## Podsumowanie
 Jest to podstawowa wersja bota i w przyszłości planuję dodać kolejne opcje, jednak jest on skierowany do serwerów prywatnych ze względu na komendy głosowe, które mogłyby być problematyczne na serwerach publicznych.
 

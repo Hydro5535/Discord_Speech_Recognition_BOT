@@ -50,4 +50,4 @@ Następne dwie informacje odpowiadają kolejno za powiadomienia o aktywności na
 ## Podsumowanie
 Jest to podstawowa wersja bota i w przyszłości planuję dodać kolejne opcje, jednak jest on skierowany do serwerów prywatnych ze względu na komendy głosowe, które mogłyby być problematyczne na serwerach publicznych.
 
-W razie problemów z można kontaktować się ze mną poprzez discorda Hydro#7549 .
+W razie problemów można kontaktować się ze mną poprzez discorda Hydro#7549 .

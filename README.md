@@ -26,7 +26,8 @@ UWAGA! Poniższy sposób nie jest trwały! Jeżeli nie posiadamy konta w serwisi
 2. Po wygenerowaniu się projektu po lewej stronie na pasku bocznym znajduje sie lista plików. Odszukujemy tam pliku .env .
 
 3. Po włączeniu wyżej wymienionego pliku pokaże nam się lista wymaganych danych, aby bot mógł działać.
-Pierwszą z niezbędnych rzeczy jest token, który uzyskać możemy na tej stronie: https://discord.com/developers/applications W internecie jest dużo poradników jak stworzyć bota dlatego fragment z uzyskaniem tokenu pominę. (Przykładowy film: https://www.youtube.com/watch?v=JMmUW4d3Noc) Jedyną ważną rzeczą na później jest skopiowanie "APPLICATION ID" z zakładki "General Information" gdyż będzie nam potrzebny później.
+Pierwszą z niezbędnych rzeczy jest token, który uzyskać możemy na tej stronie: https://discord.com/developers/applications W internecie jest dużo poradników jak stworzyć bota dlatego fragment z uzyskaniem tokenu pominę. (Przykładowy film: https://www.youtube.com/watch?v=JMmUW4d3Noc) Jedyną z  ważnych rzeczy na później jest skopiowanie "APPLICATION ID" z zakładki "General Information" gdyż będzie nam potrzebny później. Ponadto w zakładce Bot musimy uruchomić poniższe ustawienia jak na screenie.
+<img alt="Screen z ustawień bota discord" src = "https://i.imgur.com/OWIRKh1.png"/>
 
 Kolejnym tokenem jest ten odpowiedzialny za informacje z gry Apex Legends (Jeżeli nie interesuje Cię ta opcja możesz pominąć ten krok) i pozyskać możemy go na tej stronie: https://apexlegendsapi.com/documentation.php.
 Zjeżdżamy niżej aż do momentu, który widać na poniższym screenie i zaznaczone pole wypełniamy w przykładowo taki sposób a następnie klikamy "Prześlij"
@@ -41,11 +42,11 @@ Po zalogowaniu w prawym rogu widnieje guzik "Create An App" klikamy go, uzupełn
 4. Kolejnym i już ostatnim plikiem, który wymaga naszej ingerencji jest config.json .
 Ten krok wymagać będzie aktywowania trybu dewelopera na discordzie dlatego zaczniemy od tego. Wchodzimy kolejno w Ustawienia użytkownika > Zaawansowane i klikamy w suwak "Tryb dewelopera", aby go aktywować. Po wykonaniu tego kroku możemy przejść do uzupełniania naszego pliku.
 
-Pierwszą niezbędną informacją jest id naszego serwera. Klikamy prawym przyciskiem myszki na ikonę serwera a następnie guzik "Kopiuj ID" i wklejamy to między cudzysłowie (Ważne jest aby uważać, usunięcie cudzysłowia może uszkodzić działanie bota!).
+Pierwszą niezbędną informacją jest id naszego serwera. Klikamy prawym przyciskiem myszki na ikonę serwera a następnie guzik "Kopiuj ID" i wklejamy to między cudzysłowie przy guild_ID (Ważne jest aby uważać, usunięcie cudzysłowia może uszkodzić działanie bota!).
 Kolejnym krokiem jest wybranie prefixu dla naszego bota podstawowo jest to $ jednak możemy zmienić go na jakikolwiek inny poza "/" oraz należy pamiętać, aby żaden inny bot na naszym serwerze takiego nie posiadał!
 Następne dwie informacje odpowiadają kolejno za powiadomienia o aktywności na kanałach głosowych i kanał tekstowy, na którym można rozmawiać z botem. Nie zdefiniowanie ich nie uszkodzi działania bota jednak uniemożliwi korzystanie z tych opcji. W obu miejscach wymagane są ID kanałów tekstowych. które uzyskać można poprzez kliknięcie na kanał tekstowy prawym klawiszem, naciśnięcie opcji "Kopiuj ID". Wklejamy skopiowane ID w odpowiednie miejsce między cudzysłowami i gotowe.
 
-5. Ostatnią rzeczą jakom musimy zrobić jest zaproszenia bota na nasz serwer. Aby to zrobić należy zmodyfikować i wykorzystać ten link https://discord.com/oauth2/authorize?client_id=[kilientid]&permissions=8&scope=bot%20applications.commands . Modyfikacja jakiej musimy dokonać to zmiana [kilentid] na ID naszego bota, które wcześniej sobie skopiowaliśmy, będzie się ono składało wyłącznie z liczb.
+5. Ostatnią rzeczą jaką musimy zrobić jest zaproszenia bota na nasz serwer. Aby to zrobić należy zmodyfikować i wykorzystać ten link https://discord.com/oauth2/authorize?client_id=[klientid]&permissions=8&scope=bot%20applications.commands . Modyfikacja jakiej musimy dokonać to zmiana [klientid] na ID naszego bota, które wcześniej sobie skopiowaliśmy, będzie się ono składało wyłącznie z liczb.
 
 ## Podsumowanie
 Jest to podstawowa wersja bota i w przyszłości planuję dodać kolejne opcje, jednak jest on skierowany do serwerów prywatnych ze względu na komendy głosowe, które mogłyby być problematyczne na serwerach publicznych.
